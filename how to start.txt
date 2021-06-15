@@ -1,0 +1,5 @@
+copy and paste this into admin cmd
+"C:\Program Files\MongoDB\Server\4.4\bin\mongod.exe" --dbpath="C:\Users\Brent\Documents\GitHub\mylibraree\backend\data\db"
+cd backend && nodemon server.js
+
+also npm start inside of top level folder to get react to start
