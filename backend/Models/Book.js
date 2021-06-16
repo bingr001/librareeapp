@@ -12,7 +12,8 @@ let bookSchema = new Schema({
     type: String
   },
   rating: {
-    type: Number
+    type: Number,
+    // default:
   },
   notes: {
     type: String

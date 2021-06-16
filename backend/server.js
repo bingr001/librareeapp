@@ -2,15 +2,18 @@ let express = require('express');
 let mongoose = require('mongoose');
 let cors = require('cors');
 let bodyParser = require('body-parser');
-let dbConfig = require('./database/db');
+// let dbConfig = require('./database/db');
 
 // Express Route
 const bookRoute = require('../backend/routes/book.route')
 
 // Connecting mongoDB Database
 mongoose.Promise = global.Promise;
-mongoose.connect(dbConfig.db, {
-  useNewUrlParser: true
+mongoose.connect(
+  "mongodb+srv://testuser1:YRpoPUeYeKlZyCJq@cluster0.msucj.mongodb.net/Libraree?retryWrites=true&w=majority", 
+  {
+  useNewUrlParser: true,
+
 }).then(() => {
   console.log('Database sucessfully connected!')
 },
