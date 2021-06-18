@@ -11,9 +11,24 @@ let bookSchema = new Schema({
   genre: {
     type: String
   },
+  date: {
+    type: Date
+  },
   rating: {
-    type: Number,
+    type: Number
     // default:
+  },
+  amazonlink: {
+    type: String
+  },
+  sentences: {
+    type: String
+  },
+  quotes: {
+    type: String
+  },
+  whoshouldread: {
+    type: String
   },
   notes: {
     type: String

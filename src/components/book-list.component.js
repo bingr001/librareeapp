@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 import BookTableRow from './BookTableRow';
 
 
+
 export default class BookList extends Component {
 
   constructor(props) {
@@ -31,17 +32,22 @@ export default class BookList extends Component {
     });
   }
 
-
+// div className="table-wrapper">
   render() {
-    return (<div className="table-wrapper">
+    return (<div>
       <h1>My Books</h1>
-      <Table variant="dark" responsive striped bordered hover>
+      <Table variant="dark" responsive  hover>
         <thead>
           <tr>
             <th>Name</th>
             <th>Author</th>
             <th>Genre</th>
+            <th>Date Finished</th>
             <th>Rating</th>
+            <th>Amazon Link</th>
+            <th>The Book in 3 Sentences</th>
+            <th>Quotes</th>
+            <th>Who Should Read it?</th>
             <th>Notes</th>
             <th>Action</th>
           </tr>

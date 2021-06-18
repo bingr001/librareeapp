@@ -20,8 +20,13 @@ export default class EditBook extends Component {
       name: '',
       author: '',
       genre: '',
-      rating:'',
-      notes:''
+      date: '',
+      rating: '',
+      amazonlink: '',
+      sentences: '',
+      quotes: '',
+      whoshouldread: '',
+      notes: ''
     }
   }
 
@@ -32,7 +37,12 @@ export default class EditBook extends Component {
           name: res.data.name,
           author: res.data.author,
           genre: res.data.genre,
+          date: res.data.date,
           rating: res.data.rating,
+          amazonlink: res.data.whoshouldread,
+          sentences: res.data.sentences,
+          quotes: res.data.quotes,
+          whoshouldread: res.data.whoshouldread,
           notes: res.data.notes
         });
       })

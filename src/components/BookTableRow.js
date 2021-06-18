@@ -25,7 +25,12 @@ export default class BookTableRow extends Component {
                 <td>{this.props.obj.name}</td>
                 <td>{this.props.obj.author}</td>
                 <td>{this.props.obj.genre}</td>
+                <td>{this.props.obj.date}</td>
                 <td>{this.props.obj.rating}</td>
+                <td>{this.props.obj.amazonlink}</td>
+                <td>{this.props.obj.sentences}</td>
+                <td>{this.props.obj.quotes}</td>
+                <td>{this.props.obj.whoshouldread}</td>
                 <td>{this.props.obj.notes}</td>
                 <td>
                     <Link className="edit-link" to={"/edit-book/" + this.props.obj._id}>
