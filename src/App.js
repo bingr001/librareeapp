@@ -23,7 +23,7 @@ function App() {
           <Container>
 
             <Navbar.Brand>
-              <Link to={"/create-book"} className="nav-link">
+              <Link to={"/book-list"} className="nav-link">
                 Libraree
               </Link>
             </Navbar.Brand>
@@ -31,7 +31,7 @@ function App() {
             <Nav className="justify-content-end">
               <Nav>
                 <Link to={"/create-book"} className="nav-link">
-                  Create Book
+                  Add Book
                 </Link>
               </Nav>
 
@@ -69,7 +69,7 @@ function App() {
           <Col md={12}>
             <div className="wrapper">
               <Switch>
-                <Route exact path='/' component={CreateBook} />
+                <Route exact path='/' component={BookList} />
                 <Route path="/create-book" component={CreateBook} />
                 <Route path="/edit-book/:id" component={EditBook} />
                 <Route path="/book-list" component={BookList} />

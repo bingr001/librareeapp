@@ -127,6 +127,7 @@ export default class EditBook extends Component {
 
   render() {
     return (<div className="form-wrapper">
+      <h1>Edit Book Details</h1>
       <Form onSubmit={this.onSubmit}>
       <Form.Group controlId="Name">
           <Form.Label>Book</Form.Label>
