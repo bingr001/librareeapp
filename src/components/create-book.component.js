@@ -111,6 +111,7 @@ export default class CreateBook extends Component {
 
   render() {
     return (<div className="form-wrapper">
+      <h1>Add Recently Finished Book</h1>
       <Form onSubmit={this.onSubmit}>
         <Form.Group controlId="Name">
           <Form.Label>Book</Form.Label>

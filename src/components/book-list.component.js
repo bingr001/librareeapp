@@ -34,9 +34,9 @@ export default class BookList extends Component {
 
 // div className="table-wrapper">
   render() {
-    return (<div>
+    return (<div className="bookTable">
       <h1>My Books</h1>
-      <Table variant="dark" responsive  hover>
+      <Table variant="dark" responsive  hover >
         <thead>
           <tr>
             <th>Name</th>

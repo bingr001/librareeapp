@@ -12,6 +12,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CreateBook from "./components/create-book.component";
 import EditBook from "./components/edit-book.component";
 import BookList from "./components/book-list.component";
+import Login from "./components/login.component";
+import Signup from "./components/signup.component";
 
 function App() {
   return (<Router>
@@ -44,6 +46,18 @@ function App() {
                   Book List
                 </Link>
               </Nav>
+
+              <Nav>
+                <Link to={"/login"} className="nav-link">
+                  Login
+                </Link>
+              </Nav>
+
+              <Nav>
+                <Link to={"/signup"} className="nav-link">
+                  Sign Up
+                </Link>
+              </Nav>
             </Nav>
 
           </Container>
@@ -59,6 +73,8 @@ function App() {
                 <Route path="/create-book" component={CreateBook} />
                 <Route path="/edit-book/:id" component={EditBook} />
                 <Route path="/book-list" component={BookList} />
+                <Route path="/login" component={Login} />
+                <Route path="/signup" component={Signup} />
               </Switch>
             </div>
           </Col>
