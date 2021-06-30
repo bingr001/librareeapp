@@ -92,7 +92,7 @@ export default class CreateBook extends Component {
       notes: this.state.notes
     };
 
-    axios.post('http://localhost:4000/books/create-book', bookObject)
+    axios.post('/books/create-book', bookObject)
       .then(res => console.log(res.data));
 
     this.setState({
