@@ -15,7 +15,7 @@ export default class BookList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/books/')
+    axios.get('/books/')
       .then(res => {
         this.setState({
           books: res.data
@@ -47,7 +47,7 @@ export default class BookList extends Component {
             <th>Amazon Link</th>
             <th>The Book in 3 Sentences</th>
             <th>Quotes</th>
-            <th>Who Should Read it?</th>
+            <th>Who Should Read this?</th>
             <th>Notes</th>
             <th>Action</th>
           </tr>
