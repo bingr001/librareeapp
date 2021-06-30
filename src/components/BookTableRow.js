@@ -11,7 +11,7 @@ export default class BookTableRow extends Component {
     }
 
     deleteBook() {
-        axios.delete('http://localhost:4000/books/delete-book/' + this.props.obj._id)
+        axios.delete('/books/delete-book/' + this.props.obj._id)
             .then((res) => {
                 console.log('Book successfully deleted!')
             }).catch((error) => {

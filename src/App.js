@@ -97,7 +97,7 @@ function App() {
               <button 
               onClick={signOut}
               type="button" 
-              class="btn btn-dark">
+              className="btn btn-dark">
                 Sign Out
               </button>
               </Nav>
