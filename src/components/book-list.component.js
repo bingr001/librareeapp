@@ -47,7 +47,7 @@ export default class BookList extends Component {
             <th>Amazon Link</th>
             <th>The Book in 3 Sentences</th>
             <th>Quotes</th>
-            <th>Who Should Read it?</th>
+            <th>Who Should Read this?</th>
             <th>Notes</th>
             <th>Action</th>
           </tr>
