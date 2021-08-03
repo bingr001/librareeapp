@@ -32,6 +32,9 @@ let bookSchema = new Schema({
   },
   notes: {
     type: String
+  },
+  postedBy: {
+    type: { type:Schema.Types.ObjectId, ref:'user'},
   }
 }, {
     collection: 'books'

@@ -2,6 +2,7 @@ let express = require('express');
 let mongoose = require('mongoose');
 let cors = require('cors');
 let bodyParser = require('body-parser');
+const decodeIDToken = require('./authenticateToken');
 // let dbConfig = require('./database/db');
 
 // Express Route
@@ -28,6 +29,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(cors());
+app.use(decodeIDToken);
 app.use('/books', bookRoute)
 
 

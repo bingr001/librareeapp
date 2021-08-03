@@ -7,13 +7,15 @@ let bookSchema = require('../models/Book');
 
 // CREATE Book
 router.route('/create-book').post((req, res, next) => {
+  const auth = req.currentUser;
   bookSchema.create(req.body, (error, data) => {
     if (error) {
       return next(error)
     } else {
       console.log(data)
       res.json(data)
-    }
+    }if (auth) {
+      console.log('authenticated!!!', auth);    }
   })
 });
 
@@ -67,5 +69,7 @@ router.route('/delete-book/:id').delete((req, res, next) => {
     }
   })
 })
+
+
 
 module.exports = router;
