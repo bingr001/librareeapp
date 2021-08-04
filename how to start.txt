@@ -5,6 +5,5 @@ cd backend && nodemon server.js
 also npm start inside of top level folder to get react to start
 
 If working locally you have to put http://localhost:4000 in front of /book on axios functions
-    in book-list.components
-    in booktablerow.jscreate-book.components
     edit-book.component in multiple places
+    create-book
