@@ -36,7 +36,7 @@ export default class EditBook extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/books/edit-book/' + this.props.match.params.id)
+    axios.get('/books/edit-book/' + this.props.match.params.id)
       .then(res => {
         this.setState({
           name: res.data.name,
