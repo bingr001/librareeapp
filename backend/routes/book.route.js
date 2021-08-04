@@ -20,8 +20,8 @@ router.route('/create-book').post((req, res, next) => {
 });
 
 // READ Books
-router.route('/').get((req, res) => {
-  bookSchema.find((error, data) => {
+router.route('/').get((req, res, next) => {
+  bookSchema.find(req.params.id, (error, data) => {
     if (error) {
       return next(error)
     } else {
@@ -31,7 +31,7 @@ router.route('/').get((req, res) => {
 })
 
 // Get Single Book
-router.route('/edit-book/:id').get((req, res) => {
+router.route('/edit-book/:id').get((req, res, next) => {
   bookSchema.findById(req.params.id, (error, data) => {
     if (error) {
       return next(error)
@@ -49,7 +49,6 @@ router.route('/update-book/:id').put((req, res, next) => {
   }, (error, data) => {
     if (error) {
       return next(error);
-      console.log(error)
     } else {
       res.json(data)
       console.log('Book updated successfully !')
